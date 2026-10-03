@@ -69,16 +69,16 @@ a {
 }
 
 /* ==========================================================================
-   STICKY HEADER NAV (Image 2 Style - Dark Luxury with Serif Brand)
+   STICKY HEADER NAV (Original Style)
    ========================================================================== */
 header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: #061715; /* Exact Dark Background from Image 2 */
+  background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-sm);
 }
 
 .nav {
@@ -86,33 +86,31 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 15px;
+  gap: 20px;
 }
 
 .brand {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 1.25;
-}
-
-.brand-title {
-  font-family: 'Georgia', 'Merriweather', 'Lora', serif;
-  font-weight: 700;
+  font-weight: 900;
+  letter-spacing: 1px;
   font-size: 19px;
-  color: #ffffff;
-  letter-spacing: 0.2px;
+  line-height: 1.1;
+  color: var(--text-heading);
 }
 
-.brand-sub {
-  font-family: 'Inter', sans-serif;
-  font-size: 9.5px;
-  font-weight: 600;
-  letter-spacing: 2px;
-  color: #a7f3d0;
+.brand span {
+  display: block;
+  background: linear-gradient(135deg, #0f172a, #059669);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand small {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  color: var(--emerald-main);
   display: block;
   margin-top: 3px;
-  text-transform: uppercase;
+  font-weight: 700;
 }
 
 nav {
@@ -120,7 +118,7 @@ nav {
   gap: 28px;
   font-size: 14px;
   font-weight: 600;
-  color: #cbd5e1;
+  color: var(--text-muted);
 }
 
 nav a {
@@ -128,27 +126,26 @@ nav a {
 }
 
 nav a:hover {
-  color: #6ee7b7;
+  color: var(--emerald-main);
 }
 
 .topbtn {
   background: linear-gradient(135deg, #25D366, #128c7e);
   color: #fff;
-  padding: 9px 18px;
-  border-radius: 999px;
+  padding: 10px 20px;
+  border-radius: 10px;
   font-weight: 700;
   font-size: 14px;
   display: flex;
   align-items: center;
-  gap: 8px;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  gap: 6px;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  flex-shrink: 0;
 }
 
 .topbtn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 22px rgba(37, 211, 102, 0.55);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
   color: #fff;
 }
 
@@ -772,12 +769,12 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .brand-title {
-    font-size: 15px;
+  .brand {
+    font-size: 16px;
   }
-  .brand-sub {
-    font-size: 8px;
-    letter-spacing: 1.5px;
+  .brand small {
+    font-size: 8.5px;
+    letter-spacing: 1.8px;
   }
   .topbtn {
     padding: 7px 14px;
