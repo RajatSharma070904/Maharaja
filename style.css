@@ -156,7 +156,7 @@ nav a:hover {
    TOP BANNER SECTION (Lucky 24x7 Customer Support Banner)
    ========================================================================== */
 .top-banner-wrapper {
-  margin: 18px auto 0;
+  margin: 24px auto 0;
   width: min(1140px, 92%);
   border-radius: var(--radius-lg);
   overflow: hidden;
