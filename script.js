@@ -1,4 +1,4 @@
-// LUCKY FAST SERVICE - Interactive Script
+// MAHARAJA FAST SERVICE - Interactive Script
 
 document.addEventListener('DOMContentLoaded', () => {
   // 1. FAQ Accordion Interaction
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   trackedLinks.forEach((link) => {
     link.addEventListener('click', () => {
-      console.log('Routing to Lucky Fast Service WhatsApp:', waUrl);
+      console.log('Routing to Maharaja Fast Service WhatsApp:', waUrl);
     });
   });
 

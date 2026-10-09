@@ -1,3 +1,3 @@
-# lucky
+# Maharaja Fast Service
 
-LUCKY365 24x7 Customer Care & Instant ID Landing Page
+MAHARAJA FAST SERVICE - 24x7 Customer Care & Support Landing Page
