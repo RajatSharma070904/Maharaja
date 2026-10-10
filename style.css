@@ -1,27 +1,27 @@
 /* ==========================================================================
-   MAHARAJA FAST SERVICE - LUXURY MUSHROOM & GOLD THEME
-   Styled in Rich Mushroom Bronze, Warm Gold & Deep Espresso Palette
+   MAHARAJA FAST SERVICE - LUXURY LIGHT GOLD & CHAMPAGNE THEME
+   Styled in Bright Ivory, Warm Gold, Champagne & Modern Clean Aesthetics
    ========================================================================== */
 
 :root {
-  --bg-primary: #f8fafc;
+  --bg-primary: #faf8f5;
   --bg-secondary: #ffffff;
   --bg-card: #ffffff;
-  --bg-card-subtle: #f1f5f9;
-  --bg-hero: radial-gradient(circle at 80% 25%, #3d2410 0%, #251408 45%, #150a04 80%, #0c0502 100%);
+  --bg-card-subtle: #f8fafc;
+  --bg-hero: linear-gradient(135deg, #fffbeb 0%, #fef3c7 35%, #faf8f5 100%);
 
-  --border-subtle: #e2e8f0;
+  --border-subtle: #f1f5f9;
   --border-emerald: #fde68a;
   --border-gold: #fde68a;
   --border-hover: #d97706;
 
-  --text-main: #1e293b;
+  --text-main: #334155;
   --text-heading: #0f172a;
   --text-muted: #64748b;
   --text-emerald: #b45309;
   --text-gold: #b45309;
 
-  --emerald-main: #f59e0b;
+  --emerald-main: #d97706;
   --gold-main: #f59e0b;
   --gold-amber: #d97706;
   --emerald-dark: #b45309;
@@ -37,8 +37,8 @@
   --radius-full: 9999px;
 
   --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.04);
-  --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.06);
-  --shadow-card-hover: 0 18px 45px rgba(217, 119, 6, 0.18);
+  --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.05);
+  --shadow-card-hover: 0 18px 45px rgba(217, 119, 6, 0.16);
   --shadow-glow-wa: 0 10px 30px rgba(245, 158, 11, 0.45);
 }
 
@@ -151,30 +151,32 @@ nav a:hover {
 }
 
 /* ==========================================================================
-   HERO SECTION (Stacked: Poster on Top, Content Below, No Badges)
+   HERO SECTION (Stacked: Light Theme Luxury Gold)
    ========================================================================== */
 .hero {
   position: relative;
   overflow: hidden;
   background: var(--bg-hero);
-  color: #fff;
+  color: var(--text-heading);
   padding: 55px 0 70px;
   margin-top: 24px;
   border-radius: var(--radius-lg);
+  border: 1.5px solid #fde68a;
+  box-shadow: 0 14px 40px rgba(217, 119, 6, 0.08);
 }
 
 .glow {
   position: absolute;
   border-radius: 50%;
   filter: blur(80px);
-  opacity: 0.25;
+  opacity: 0.18;
   pointer-events: none;
 }
 
 .g1 {
   width: 320px;
   height: 320px;
-  background: #d97706;
+  background: #fde68a;
   right: -80px;
   top: -80px;
 }
@@ -182,7 +184,7 @@ nav a:hover {
 .g2 {
   width: 250px;
   height: 250px;
-  background: #b45309;
+  background: #fef08a;
   left: -80px;
   bottom: -80px;
 }
@@ -210,16 +212,16 @@ nav a:hover {
   max-width: 440px;
   border-radius: 20px;
   overflow: hidden;
-  border: 3px solid rgba(245, 158, 11, 0.55);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 35px rgba(217, 119, 6, 0.28);
+  border: 3px solid #fde68a;
+  box-shadow: 0 16px 40px rgba(217, 119, 6, 0.16), 0 0 30px rgba(253, 230, 138, 0.4);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s ease, box-shadow 0.3s ease;
-  background: #000;
+  background: #ffffff;
 }
 
 .hero-poster-link:hover {
   transform: translateY(-4px) scale(1.02);
-  border-color: #fbbf24;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 45px rgba(217, 119, 6, 0.35);
+  border-color: #f59e0b;
+  box-shadow: 0 22px 55px rgba(217, 119, 6, 0.22), 0 0 40px rgba(251, 191, 36, 0.5);
 }
 
 .hero-poster-img {
@@ -239,7 +241,7 @@ nav a:hover {
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: 800;
-  color: #fbbf24;
+  color: #b45309;
   margin-bottom: 12px;
   text-transform: uppercase;
 }
@@ -254,17 +256,18 @@ nav a:hover {
   margin: 0 0 16px;
   letter-spacing: -0.5px;
   font-weight: 800;
+  color: #0f172a;
 }
 
 .hero-copy-bottom h1 em {
   font-style: normal;
-  color: #fbbf24;
+  color: #d97706;
   display: block;
 }
 
 .hero-copy-bottom p {
   font-size: 17px;
-  color: #cbd5e1;
+  color: #475569;
   max-width: 620px;
   margin: 0 auto;
   line-height: 1.6;
@@ -302,15 +305,17 @@ nav a:hover {
 }
 
 .btn.ghost {
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  color: #fff;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(8px);
+  border: 1.5px solid #d97706;
+  color: #b45309;
+  background: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.1);
 }
 
 .btn.ghost:hover {
-  background: rgba(255, 255, 255, 0.12);
+  background: #fffbeb;
   transform: translateY(-2px);
+  color: #92400e;
 }
 
 .mini {
@@ -319,7 +324,7 @@ nav a:hover {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 24px;
-  color: #94a3b8;
+  color: #64748b;
   font-size: 13px;
   font-weight: 600;
 }
@@ -332,7 +337,7 @@ nav a:hover {
 
 .mini span::before {
   content: '✓';
-  color: #fbbf24;
+  color: #d97706;
   font-weight: 900;
 }
 
@@ -480,13 +485,15 @@ nav a:hover {
 }
 
 /* ==========================================================================
-   CONTACT SECTION (Nammaking Style)
+   CONTACT SECTION (Light Theme Luxury Card)
    ========================================================================== */
 .contact {
   padding: 75px 0;
-  background: radial-gradient(circle at 80% 20%, #3d2410 0%, #251408 50%, #150a04 100%); border: 1px solid rgba(245, 158, 11, 0.25);
-  color: #fff;
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 40%, #faf8f5 100%);
+  border: 1.5px solid #fde68a;
+  color: #0f172a;
   border-radius: var(--radius-lg);
+  box-shadow: 0 14px 40px rgba(217, 119, 6, 0.08);
 }
 
 .contact-box {
@@ -500,10 +507,11 @@ nav a:hover {
   font-size: 34px;
   font-weight: 800;
   margin: 10px 0 12px;
+  color: #0f172a;
 }
 
 .contact p {
-  color: #cbd5e1;
+  color: #475569;
   font-size: 16px;
 }
 
@@ -512,7 +520,7 @@ nav a:hover {
   flex-direction: column;
   gap: 12px;
   margin-top: 24px;
-  color: #f1f5f9;
+  color: #334155;
   font-size: 15px;
 }
 
@@ -520,12 +528,13 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #fbbf24;
-  font-weight: 600;
+  color: #d97706;
+  font-weight: 700;
 }
 
 .contact-info a:hover {
   text-decoration: underline;
+  color: #b45309;
 }
 
 .cta-card {
@@ -533,7 +542,8 @@ nav a:hover {
   color: #0f172a;
   border-radius: 20px;
   padding: 32px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 16px 40px rgba(217, 119, 6, 0.12);
+  border: 1.5px solid #fde68a;
   text-align: center;
 }
 
